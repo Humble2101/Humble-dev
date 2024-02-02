@@ -33,7 +33,7 @@ function Portfolio() {
       className="lg:h-[160vh] h-[280vh] w-[100%] bg-p1 md:pt-[5em] pt-[2em] flex flex-col items-center justify-between"
     >
       <div className="text-4xl font-black lg:mr-[25em] lg:w-[20%] md:w-[35%] w-[80%] flex items-center justify-center text-p3">
-        <div className="bg-[#18423C] w-[100%] text-end py-4 rounded-md">
+        <div className="bg-[#18423C] w-[100%] text-end justify-end py-4 rounded-md">
           PORTFOLI
         </div>
         <span>OS</span>
