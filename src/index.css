@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.web {
+  background-image: url(./assets/webdeveloper-removebg-preview.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.index {
+  background-image: url(./assets/index.png);
+  background-position: center;
+}
