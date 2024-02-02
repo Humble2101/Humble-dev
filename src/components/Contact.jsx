@@ -97,7 +97,7 @@ function Contact() {
               <p>Let's connect</p>
               <p>Reach out for collaboration and consultation.</p>
             </div>
-            <div className="w-[100%] lg:h-[90%] h-[70%] flex flex-col items-center justify-around relative lg:mt-0 mt-10">
+            <div className="w-[100%] lg:h-[90%] h-[80%] flex flex-col items-center justify-around relative lg:mt-0 mt-10">
               {/* <div className="w-[100%] flex items-center justify-between h-[8%] relative">
                 <input
                   type="name"
@@ -136,21 +136,21 @@ function Contact() {
               <form
                 ref={form}
                 onSubmit={sendEmail}
-                className="w-[100%] h-[80%] flex flex-col items-center justify-around"
+                className="w-[100%] lg:h-[80%] h-[90%] flex flex-col items-center justify-around"
                 id="Email"
               >
-                <div className="w-[90%] h-[10%] flex items-center justify-between">
+                <div className="w-[90%] lg:h-[10%] h-[25%] flex lg:flex-row flex-col items-center justify-between">
                   <input
                     type="text"
                     name="user_name"
                     placeholder="Full name"
-                    className="w-[45%] md:placeholder:text-lg placeholder:text-black bg-[gray] rounded-md pl-4 h-[100%] outline-none"
+                    className="lg:w-[45%] w-[100%] md:placeholder:text-lg placeholder:text-black bg-[gray] rounded-md pl-4 lg:h-[100%] h-[40%] outline-none"
                   />
                   <input
                     type="email"
                     name="user_email"
                     placeholder="Email"
-                    className="w-[45%] md:placeholder:text-lg placeholder:text-sm placeholder:text-black bg-[gray] rounded-md pl-4 h-[100%] outline-none"
+                    className="lg:w-[45%] w-[100%] md:placeholder:text-lg placeholder:text-sm placeholder:text-black bg-[gray] rounded-md pl-4 lg:h-[100%] h-[40%] outline-none"
                   />
                 </div>
 
@@ -162,7 +162,7 @@ function Contact() {
                 <input
                   type="submit"
                   value="Send"
-                  className="bg-p2 py-3 px-8 rounded-md text-lg font-semibold cursor-pointer"
+                  className="bg-p2 lg:py-3 px-8 py-1 rounded-md text-lg font-semibold cursor-pointer"
                 />
               </form>
             </div>

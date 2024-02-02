@@ -83,6 +83,12 @@ function Portfolio() {
                     A web application that connects artisans to people who need
                     their services.
                   </p>
+                  <a
+                    href="https://fast-hand-project.vercel.app"
+                    className="text-p3"
+                  >
+                    Link.....
+                  </a>
                 </div>
               </div>
             </div>
@@ -112,6 +118,9 @@ function Portfolio() {
                     A web application where people can get home services like
                     cooking, cleaning, home delivery etc.
                   </p>
+                  <a href="https://eco-spak.vercel.app" className="text-p3">
+                    Link...
+                  </a>
                 </div>
               </div>
             </div>
@@ -141,6 +150,12 @@ function Portfolio() {
                     A web application that connects artisans to people who need
                     their services.
                   </p>
+                  <a
+                    href="https://fast-hand-project.vercel.app"
+                    className="text-p3"
+                  >
+                    Link.....
+                  </a>
                 </div>
               </div>
             </div>
