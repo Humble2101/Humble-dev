@@ -43,10 +43,7 @@ function Footer() {
           <a href="https://wa.link/cxp2z0" className="w-[18%]">
             <img src={Whatsapp} alt="" className="w-[100%] rounded-lg" />
           </a>
-          <a
-            href="https://mail.google.com/davidjohns2101@gmail.com"
-            className="w-[18%]"
-          >
+          <a href="#Email" className="w-[18%]">
             <img src={Mail} alt="" className="w-[100%] rounded-lg" />
           </a>
         </div>

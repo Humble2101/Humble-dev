@@ -22,9 +22,9 @@ function Services() {
       {/* <FaReact className="md:relative md:left-[5em] md:bottom-[3.9em] bg-p1 text-6xl text-[#61DAFB]" />
       <SiMongodb className="md:relative bg-p1 text-7xl md:left-[1.6em] text-[#13AA52]" />
       <SiExpress className="md:relative md:left-[3.5em] md:top-[3.8em] bg-p1 text-6xl text-[#000000]" /> */}
-      <div className="lg:h-[90%] h-[38%] lg:w-[40%] w-[80%] border-dashed  border-[2px] rounded-full flex items-center justify-center relative md:right-[5em] lg:right-0">
+      <div className="lg:h-[90%] h-[43%] lg:w-[40%] w-[80%] border-dashed  border-[2px] rounded-full flex items-center justify-center relative md:right-[5em] lg:right-0">
         <FaReact className=" absolute md:top-[3.5em] left-[-0.5em] bg-p1 md:text-6xl text-4xl text-[#61DAFB]" />
-        <SiMongodb className="absolute lg:top-[8.3em] md:top-[6.4em] top-[5.6em] md:text-6xl text-5xl text-[#13AA52]" />
+        <SiMongodb className="absolute lg:top-[8.3em] md:top-[6.4em] top-[6em] md:text-6xl text-5xl text-[#13AA52]" />
         <SiExpress className="absolute top-[-0.5em] bg-p1 md:text-6xl text-4xl text-[#000000]" />
         <div className="h-[63%] w-[63%] border-dotted border-[2px] rounded-full flex items-center justify-center">
           <FaHtml5 className="relative md:bottom-[1.7em] bottom-[1em] md:right-0 right-[0.1em] md:text-6xl text-4xl bg-p1 text-[#E34F26]" />

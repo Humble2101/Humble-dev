@@ -1,4 +1,3 @@
-import React from "react";
 import Badass from "../assets/badassprussia.png";
 import Facebook from "../assets/facebook.png";
 import Github from "../assets/github.png";
@@ -8,8 +7,33 @@ import Instagram from "../assets/instagram.jpeg";
 import { IoPerson } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
 import Logo from "../assets/logo.png";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 function Contact() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_n46ktsu",
+        "template_00ltmrr",
+        form.current,
+        "c3LoePjYeggmJmrzA"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          console.log("message sent");
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <div
       id="Contact"
@@ -21,7 +45,7 @@ function Contact() {
         </div>
         <span>CT</span>
       </div>
-      <div className="h-[80%] lg:w-[80%] w-[90%] flex lg:flex-row flex-col items-center justify-around">
+      <div className="h-[80%] lg:w-[80%] w-[90%] flex lg:flex-row flex-col items-center justify-around lg:mb-0 mb-[3em]">
         <div className="h-[90%] lg:w-[40%] w-[100%] bg-[#0B322D] lg:rounded-l-3xl rounded-t-3xl flex items-center justify-around flex-col">
           <div className="w-[95%] lg:h-[40%] h-[30%] flex items-center justify-center">
             <img src={Badass} alt="" />
@@ -74,7 +98,7 @@ function Contact() {
               <p>Reach out for collaboration and consultation.</p>
             </div>
             <div className="w-[100%] lg:h-[90%] h-[70%] flex flex-col items-center justify-around relative lg:mt-0 mt-10">
-              <div className="w-[100%] flex items-center justify-between h-[8%] relative">
+              {/* <div className="w-[100%] flex items-center justify-between h-[8%] relative">
                 <input
                   type="name"
                   placeholder="First Name"
@@ -108,7 +132,39 @@ function Contact() {
                 <button className="text-xl font-bold bg-p3 px-8 py-5 rounded-md">
                   Send
                 </button>
-              </div>
+              </div>  */}
+              <form
+                ref={form}
+                onSubmit={sendEmail}
+                className="w-[100%] h-[80%] flex flex-col items-center justify-around"
+                id="Email"
+              >
+                <div className="w-[90%] h-[10%] flex items-center justify-between">
+                  <input
+                    type="text"
+                    name="user_name"
+                    placeholder="Full name"
+                    className="w-[45%] md:placeholder:text-lg placeholder:text-black bg-[gray] rounded-md pl-4 h-[100%] outline-none"
+                  />
+                  <input
+                    type="email"
+                    name="user_email"
+                    placeholder="Email"
+                    className="w-[45%] md:placeholder:text-lg placeholder:text-sm placeholder:text-black bg-[gray] rounded-md pl-4 h-[100%] outline-none"
+                  />
+                </div>
+
+                <textarea
+                  name="message"
+                  placeholder="Message"
+                  className="w-[90%] h-[50%] rounded-md pl-4 pt-2 bg-[gray] placeholder:text-black placeholder:text-lg outline-none"
+                />
+                <input
+                  type="submit"
+                  value="Send"
+                  className="bg-p2 py-3 px-8 rounded-md text-lg font-semibold cursor-pointer"
+                />
+              </form>
             </div>
           </div>
         </div>
