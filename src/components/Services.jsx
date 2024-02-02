@@ -16,8 +16,11 @@ function Services() {
       id="Services"
       className="h-[100vh] w-[100%] bg-p1 flex flex-col md:flex-row items-center justify-around"
     >
-      <div className="flex  md:rotate-[-90deg] text-white text-4xl md:text-7xl font-bold relative md:right-[2.1em]">
-        <div className="px-10 pr-5 rounded-md bg-p3">SERVIC</div>ES
+      <div className="flex  md:rotate-[-90deg] text-white text-4xl md:text-7xl font-bold relative md:right-[2.1em] w-[52%]">
+        <div className="bg-p3 text-end justify-end w-[100%] flex rounded-md">
+          SERVIC
+        </div>
+        ES
       </div>
       {/* <FaReact className="md:relative md:left-[5em] md:bottom-[3.9em] bg-p1 text-6xl text-[#61DAFB]" />
       <SiMongodb className="md:relative bg-p1 text-7xl md:left-[1.6em] text-[#13AA52]" />

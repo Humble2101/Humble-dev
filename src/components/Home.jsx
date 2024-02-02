@@ -32,7 +32,7 @@ function Home(props) {
             Elevate your{" "}
             <span className="bg-p3 text-black px-6 py-2 rounded-md">
               {" "}
-              online Presence
+              Online Presence
             </span>{" "}
             with{" "}
             <h2 className="text-p3 font-black">
